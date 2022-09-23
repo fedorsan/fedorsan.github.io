@@ -1,0 +1,1090 @@
+RSD characterization for n=3 agents
+(automatically generated proof).
+
+We prove that that the Random Serial Dictatorship is the only mechanism satisfying
+  -- Symmetry (Anonymity + Neutrality);
+  -- SD-Strategy-Proofness;
+  -- Ex-Post Pareto Optimality.
+
+Some nuances:
+  -- Symmetry allows us to fix the preference of the first agent and hence to reduce the number of profiles to consider.
+  -- SD-Strategy-Proofness is equivalent to the combination of 3 properties under the swap of the two adjancent objects in agent's ranking:
+a) upper-invariance  b) lower invariance c) swap monotonicity.
+We don't use swap monotonicity in the proof.
+  -- Instead of Ex-Post Pareto Optimality we use a slightly weaker property.
+Namely, if an agent does not receive a certain object in any Pareto-optimal allocation, then the mechanism must never allocate this object to this agent.
+
+Let's start!
+
+Consider the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: a > b > c
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 2/6 2/6 2/6 
+agent 2: 2/6 2/6 2/6 
+agent 3: 2/6 2/6 2/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 1 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > a > c
+agent 3: b > a > c
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 2/6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 */6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 1 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: a > c > b
+The allocation takes the form
+         a   b   c
+agent 1: 2/6 */6 */6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 */6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 2 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: b > a > c
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 2/6 
+
+Assume agent 2 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: a > c > b
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 */6 */6 
+agent 3: 2/6 */6 */6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: b > a > c
+agent 3: b > a > c
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: */6 0/6 2/6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 */6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 4/6 0/6 2/6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 */6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 4/6 0/6 2/6 
+agent 2: 1/6 3/6 2/6 
+agent 3: 1/6 3/6 2/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 1 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: c > a > b
+agent 3: c > a > b
+The allocation takes the form
+         a   b   c
+agent 1: 4/6 */6 */6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 */6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 2 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: b > a > c
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 */6 2/6 
+agent 3: */6 */6 2/6 
+
+Assume agent 2 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > a > c
+agent 3: b > c > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 */6 */6 
+agent 3: */6 3/6 */6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: c > a > b
+agent 3: c > a > b
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: 4/6 */6 0/6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 */6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 4/6 2/6 0/6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 */6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 4/6 2/6 0/6 
+agent 2: 1/6 2/6 3/6 
+agent 3: 1/6 2/6 3/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 1 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: c > b > a
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 0/6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 */6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 2 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: c > a > b
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 2/6 */6 
+agent 3: */6 */6 */6 
+
+Assume agent 2 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: c > a > b
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 3/6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: c > b > a
+agent 3: c > b > a
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: */6 0/6 0/6 
+agent 2: 0/6 */6 */6 
+agent 3: 0/6 */6 */6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 6/6 0/6 0/6 
+agent 2: 0/6 */6 */6 
+agent 3: 0/6 */6 */6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 6/6 0/6 0/6 
+agent 2: 0/6 3/6 3/6 
+agent 3: 0/6 3/6 3/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 1 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > c > a
+agent 3: b > c > a
+The allocation takes the form
+         a   b   c
+agent 1: 6/6 */6 */6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 */6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 2 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > c > a
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: 0/6 */6 */6 
+agent 3: */6 */6 */6 
+
+Assume agent 2 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: c > a > b
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 */6 3/6 
+agent 3: */6 */6 3/6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: b > c > a
+agent 3: b > c > a
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: 6/6 0/6 0/6 
+agent 2: 0/6 */6 */6 
+agent 3: 0/6 */6 */6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 6/6 0/6 0/6 
+agent 2: 0/6 3/6 3/6 
+agent 3: 0/6 3/6 3/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 1 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: a > c > b
+The allocation takes the form
+         a   b   c
+agent 1: 2/6 */6 0/6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 */6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 2 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > c > a
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: 0/6 */6 */6 
+agent 3: 0/6 */6 */6 
+
+Assume agent 2 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > a > c
+agent 3: b > c > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 3/6 */6 
+agent 3: */6 3/6 */6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: a > c > b
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: 2/6 */6 0/6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 */6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 2/6 4/6 0/6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 */6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 2/6 4/6 0/6 
+agent 2: 2/6 1/6 3/6 
+agent 3: 2/6 1/6 3/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 2 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: c > a > b
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 2/6 */6 
+agent 3: */6 1/6 */6 
+
+Assume agent 2 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: a > c > b
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: 2/6 */6 */6 
+agent 3: 2/6 */6 */6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: c > a > b
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: */6 */6 0/6 
+agent 2: */6 2/6 */6 
+agent 3: 0/6 1/6 */6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: */6 */6 0/6 
+agent 2: */6 2/6 */6 
+agent 3: 0/6 1/6 5/6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: */6 3/6 0/6 
+agent 2: */6 2/6 1/6 
+agent 3: 0/6 1/6 5/6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 3/6 3/6 0/6 
+agent 2: 3/6 2/6 1/6 
+agent 3: 0/6 1/6 5/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 1 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > c > a
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 0/6 
+agent 2: 0/6 */6 */6 
+agent 3: 0/6 */6 */6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 1 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: b > a > c
+The allocation takes the form
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: */6 */6 2/6 
+agent 3: */6 */6 2/6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 2 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: c > a > b
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: 3/6 */6 */6 
+agent 3: */6 */6 */6 
+
+Assume agent 3 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 5/6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: b > c > a
+agent 3: c > b > a
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: */6 0/6 0/6 
+agent 2: 0/6 */6 0/6 
+agent 3: 0/6 0/6 */6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 6/6 0/6 0/6 
+agent 2: 0/6 6/6 0/6 
+agent 3: 0/6 0/6 6/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 2 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > a > c
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 6/6 */6 
+agent 3: */6 */6 */6 
+
+Assume agent 3 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > c > a
+agent 3: c > a > b
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 6/6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: b > a > c
+agent 3: c > b > a
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: */6 0/6 0/6 
+agent 2: 0/6 6/6 0/6 
+agent 3: 0/6 0/6 */6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 6/6 0/6 0/6 
+agent 2: 0/6 6/6 0/6 
+agent 3: 0/6 0/6 6/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 1 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: c > a > b
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 0/6 
+agent 2: 3/6 */6 */6 
+agent 3: */6 */6 */6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 1 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > c > a
+agent 3: c > a > b
+The allocation takes the form
+         a   b   c
+agent 1: 6/6 */6 */6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 6/6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 2 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 */6 0/6 
+agent 3: */6 */6 */6 
+
+Assume agent 3 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > a > c
+agent 3: b > c > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 3/6 */6 
+agent 3: 0/6 3/6 */6 
+
+Assume agent 3 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > a > c
+agent 3: c > a > b
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 6/6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: c > a > b
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: */6 */6 0/6 
+agent 2: 3/6 */6 0/6 
+agent 3: 0/6 0/6 */6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: */6 */6 0/6 
+agent 2: 3/6 3/6 0/6 
+agent 3: 0/6 0/6 6/6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 3/6 3/6 0/6 
+agent 2: 3/6 3/6 0/6 
+agent 3: 0/6 0/6 6/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 1 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: b > a > c
+The allocation takes the form
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 */6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 2 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > a > c
+agent 3: c > a > b
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 */6 0/6 
+agent 3: */6 */6 6/6 
+
+Assume agent 3 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: a > c > b
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: 2/6 */6 */6 
+agent 3: 2/6 0/6 */6 
+
+Assume agent 3 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 */6 0/6 
+agent 3: */6 */6 6/6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: b > a > c
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: */6 0/6 */6 
+agent 3: 0/6 */6 */6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 0/6 */6 
+agent 3: 0/6 */6 */6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 0/6 3/6 
+agent 3: 0/6 */6 */6 
+
+Let's apply Strategy-Proofness.
+Assume agent 2 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > a > c
+agent 3: c > a > b
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 */6 0/6 
+agent 3: */6 0/6 6/6 
+
+Assume agent 2 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: b > a > c
+The allocation takes the form
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 */6 2/6 
+agent 3: */6 */6 2/6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: b > a > c
+agent 3: c > a > b
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: */6 0/6 0/6 
+agent 2: 0/6 */6 0/6 
+agent 3: 0/6 0/6 6/6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 6/6 0/6 0/6 
+agent 2: 0/6 6/6 0/6 
+agent 3: 0/6 0/6 6/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 1 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 0/6 
+agent 2: */6 */6 0/6 
+agent 3: */6 */6 6/6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 2 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > c > a
+agent 3: c > a > b
+The allocation takes the form
+         a   b   c
+agent 1: 6/6 */6 */6 
+agent 2: */6 6/6 */6 
+agent 3: */6 */6 6/6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: c > b > a
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: */6 */6 0/6 
+agent 2: */6 */6 0/6 
+agent 3: 0/6 0/6 6/6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 3/6 3/6 0/6 
+agent 2: 3/6 3/6 0/6 
+agent 3: 0/6 0/6 6/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 1 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: b > c > a
+The allocation takes the form
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: */6 */6 */6 
+agent 3: */6 */6 */6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 2 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: 3/6 */6 */6 
+agent 3: */6 */6 5/6 
+
+Assume agent 3 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: b > c > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 */6 */6 
+agent 3: 0/6 */6 */6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: b > c > a
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: */6 0/6 */6 
+agent 3: 0/6 */6 */6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 0/6 */6 
+agent 3: 0/6 */6 */6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 0/6 3/6 
+agent 3: 0/6 */6 */6 
+
+Let's apply Strategy-Proofness.
+Assume agent 2 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > c > a
+agent 3: c > a > b
+The allocation takes the form
+         a   b   c
+agent 1: 6/6 */6 */6 
+agent 2: */6 6/6 */6 
+agent 3: */6 0/6 6/6 
+
+Assume agent 2 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: b > c > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: 3/6 */6 */6 
+agent 3: 0/6 */6 */6 
+
+Assume agent 3 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: 3/6 */6 */6 
+agent 3: 0/6 */6 5/6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: b > c > a
+agent 3: c > a > b
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: 6/6 0/6 0/6 
+agent 2: 0/6 6/6 0/6 
+agent 3: 0/6 0/6 6/6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: b > c > a
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: 3/6 */6 */6 
+agent 3: 0/6 */6 */6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 */6 */6 
+agent 3: 0/6 */6 */6 
+
+Let's apply Strategy-Proofness.
+Assume agent 1 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 */6 */6 
+agent 3: 0/6 */6 5/6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: c > b > a
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: 3/6 */6 0/6 
+agent 2: 3/6 */6 */6 
+agent 3: 0/6 */6 5/6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 3/6 3/6 0/6 
+agent 2: 3/6 */6 */6 
+agent 3: 0/6 1/6 5/6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 3/6 3/6 0/6 
+agent 2: 3/6 2/6 1/6 
+agent 3: 0/6 1/6 5/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 2 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: c > a > b
+agent 3: c > b > a
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 */6 
+agent 2: */6 2/6 3/6 
+agent 3: */6 */6 3/6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: c > a > b
+agent 3: c > b > a
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: */6 */6 0/6 
+agent 2: */6 2/6 3/6 
+agent 3: 0/6 */6 3/6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: */6 */6 0/6 
+agent 2: 1/6 2/6 3/6 
+agent 3: 0/6 3/6 3/6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 5/6 1/6 0/6 
+agent 2: 1/6 2/6 3/6 
+agent 3: 0/6 3/6 3/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 1 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: b > a > c
+agent 3: b > c > a
+The allocation takes the form
+         a   b   c
+agent 1: 5/6 */6 */6 
+agent 2: */6 3/6 */6 
+agent 3: 0/6 3/6 */6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: b > a > c
+agent 3: b > c > a
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: 5/6 0/6 */6 
+agent 2: */6 3/6 */6 
+agent 3: 0/6 3/6 */6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 5/6 0/6 1/6 
+agent 2: */6 3/6 */6 
+agent 3: 0/6 3/6 3/6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 5/6 0/6 1/6 
+agent 2: 1/6 3/6 2/6 
+agent 3: 0/6 3/6 3/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 1 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: a > c > b
+The allocation takes the form
+         a   b   c
+agent 1: */6 */6 1/6 
+agent 2: 2/6 */6 */6 
+agent 3: 2/6 0/6 */6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 2 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: b > c > a
+The allocation takes the form
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 */6 2/6 
+agent 3: 0/6 */6 */6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: a > c > b
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: */6 */6 1/6 
+agent 2: 2/6 */6 */6 
+agent 3: 2/6 0/6 */6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: */6 */6 1/6 
+agent 2: 2/6 */6 */6 
+agent 3: 2/6 0/6 4/6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 2/6 3/6 1/6 
+agent 2: 2/6 3/6 1/6 
+agent 3: 2/6 0/6 4/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 2 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: b > a > c
+The allocation takes the form
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 0/6 3/6 
+agent 3: 0/6 */6 1/6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: b > a > c
+We already know that the allocation has the form
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 0/6 3/6 
+agent 3: 0/6 */6 1/6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 0/6 3/6 
+agent 3: 0/6 5/6 1/6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 3/6 1/6 2/6 
+agent 2: 3/6 0/6 3/6 
+agent 3: 0/6 5/6 1/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 1 has flipped objects a and b.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: b > c > a
+The allocation takes the form
+         a   b   c
+agent 1: 3/6 */6 2/6 
+agent 2: 3/6 */6 2/6 
+agent 3: 0/6 */6 */6 
+Note that we have also applied Neutrality to rename the objects to keep the preferences of the first agent unchanged. 
+
+Assume agent 3 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: b > c > a
+The allocation takes the form
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 0/6 3/6 
+agent 3: 0/6 5/6 */6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: b > c > a
+We already know that the allocation has the form
+         a   b   c
+agent 1: 3/6 */6 2/6 
+agent 2: 3/6 */6 2/6 
+agent 3: 0/6 */6 */6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 3/6 1/6 2/6 
+agent 2: 3/6 1/6 2/6 
+agent 3: 0/6 */6 */6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 3/6 1/6 2/6 
+agent 2: 3/6 1/6 2/6 
+agent 3: 0/6 4/6 2/6 
+
+Let's apply Strategy-Proofness.
+Assume agent 3 has flipped objects b and c.
+Hence, at the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: b > a > c
+The allocation takes the form
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 */6 2/6 
+agent 3: */6 4/6 2/6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: a > b > c
+agent 3: b > a > c
+Application of Ex-post Efficiency gives 
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 */6 2/6 
+agent 3: 0/6 4/6 2/6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 1/6 2/6 
+agent 3: 0/6 4/6 2/6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 3/6 1/6 2/6 
+agent 2: 3/6 1/6 2/6 
+agent 3: 0/6 4/6 2/6 
+
+
+Consider the profile
+agent 1: a > b > c
+agent 2: a > c > b
+agent 3: b > c > a
+We already know that the allocation has the form
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 0/6 3/6 
+agent 3: 0/6 5/6 */6 
+Application of Lottery Constraint gives 
+         a   b   c
+agent 1: 3/6 */6 */6 
+agent 2: 3/6 0/6 3/6 
+agent 3: 0/6 5/6 1/6 
+Application of Anonymity & No-waste Constraint gives 
+         a   b   c
+agent 1: 3/6 1/6 2/6 
+agent 2: 3/6 0/6 3/6 
+agent 3: 0/6 5/6 1/6 
+
+
+For all the preferences profiles the outcome of the mechanism was deduced from the axioms.
+The conjecture is proved for N=3.
+Hurah!!
