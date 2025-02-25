@@ -70,6 +70,31 @@ a:active {
   color: orangered;    
 }    
     
+    
+.quote-container {
+    text-align: right;
+    font-style: italic;
+    color: #ddd; /* Light grey color */
+    margin-top: 10px;
+    margin-bottom: 30px; /* Add some space below the quote */
+    padding-right: 20px; /* Add some padding on the right */
+    width: 100%; /* Important for right alignment */
+}
+
+.quote-text {
+    font-size: 1.2em;  /* Increased font size */
+    margin-bottom: 4px;
+    display: block; /* Make it a block element */
+    width: 100%; /* Ensure it takes full width for right alignment */
+}
+.quote-author{
+    font-size: 1em; /* Increased font size, slightly smaller than the quote */
+    display: block;
+    width: 100%; /*Ensure author takes up whole width, so it's right aligned.*/
+}
+    
+    
+    
 </style>    
     
     
@@ -378,7 +403,11 @@ I am excited to continue at Princeton University as an Assistant Professor start
   
   <!-- Publications Section -->
   <div class="w3-padding-64 w3-content" id="research">
-    <h1 class="w3-text-light-grey">Research</h1>
+      <h1 class="w3-text-light-grey">Research</h1>
+    <div class="quote-container">
+        <div class="quote-text">...And since it is beautiful, it is truly useful...</div>
+        <div class="quote-author">The Little Prince, on economic theory</div>
+    </div>
     <hr style="width:200px" class="w3-opacity">  
     <div class="w3-margin-left">  
     <h3 class="w3-text-light-grey" style="margin-top: 40px" id="wp">Working papers</h3>
